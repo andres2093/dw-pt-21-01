@@ -1,0 +1,38 @@
+<!--
+    Propietario / Grupo usuarios
+        chown [nombre-de-usuario]:[nombre-de-grupo-de-usuarios] [archivo-con-extension]
+        ej -> chown andres:staff index.html
+
+    Permisos 
+        r (read) – 4
+        w (write) – 2
+        x (execute) – 1 
+
+        chmod [permisos-"ver-tabla"] [archivo-con-extension]
+        ej -> chmod 777 index.html
+
+    Servidor "host" -> ec2-54-202-251-229.us-west-2.compute.amazonaws.com
+    Usuario         -> ubuntu 
+
+    Conectarse desde ssh
+        ssh -i ./ec2-bedu-bkfun.pem ubuntu@ec2-54-202-251-229.us-west-2.compute.amazonaws.com
+
+    Enviar archivo desde local a servidor
+        scp -i ./ec2-bedu-bkfun.pem ./index-carlos-2.html ubuntu@ec2-54-202-251-229.us-west-2.compute.amazonaws.com:/home/ubuntu
+
+    Mover archivo a ruta publica
+        sudo mv [nombre-de-archivo] /var/www/html
+        ej -> sudo mv index-carlos-2.html /var/www/html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carlos 2</title>
+</head>
+<body>
+	 <h1>¡Hola! soy Carlos 2</h1>
+	<p>Bienvenido a la soberana república soviética de mi website</p>
+</body>
+</html>
