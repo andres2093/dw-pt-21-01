@@ -1,3 +1,10 @@
+# Instrucciones para ejecutar:
+## - Instalar dependencias con -> npm i
+## - Modificar nombre de archivo .env.quitarExtencion debe quedar .env
+## - Ejecutar proyecto con -> npm run start
+## - Pueden crear sus usuarios y después iniciar sesión o ya está creado el de carlos2@gmail.com contraseña: carlos
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
